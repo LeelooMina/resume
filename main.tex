@@ -1,0 +1,278 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Crystal Campbell} \\ \vspace{1pt}
+     \small 417-379-1561 $|$ \href{cjkcampbell@gmail.com}{\underline{cjkcampbell@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/cjkcampbell/}{\underline{linkedin.com/in/cjkcampbell/}} $|$
+    \href{https://github.com/LeelooMina}{\underline{github.com/LeelooMina}}
+\end{center}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{BitBucket Pipeline Visualizer} $|$ \emph{Vue.js, Node.js, Express.js, MongoDB, Javascript, BitBucket}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a custom CI/CD dashboard to client specifications}
+            \resumeItem{Implemented real-time visualization of CI/CD pipelines, enabling teams to track build statuses, duration, and success rates.}
+            \resumeItem{Created and implemented an API and database to store user information, allowing users to create posts, like content, and follow other users.}
+             \resumeItem{Ensured efficient data storage and retrieval using MongoDB for quick access to historical pipeline information.}
+              \resumeItem{Collaborated with a team to deliver a high-quality solution within project deadlines.}
+              \resumeItemListEnd
+     \resumeProjectHeading
+          {\textbf{Oak Tree (Twitter Clone)} $|$ \emph{Ruby on Rails, Bootstrap, Vanilla CSS, Railway}}{}
+          \resumeItemListStart
+            \resumeItem{Designed an ER diagram using draw.io to visually represent the database schema and entity relationships}
+            \resumeItem{Developed an authentication system for user accounts.}
+            \resumeItem{Created and implemented the database to store user information, allowing users to create posts, like content, and follow other users.}
+             \resumeItem{Replicated Twitter's site design using Bootstrap and the CSS Flexbox system.}
+              \resumeItem{Configured deployment settings for the application on Railway, including environment variables and troubleshooting via the command line.}
+           
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SocialCocktails} $|$ \emph{Angular, Bootstrap, Vanilla CSS, Firebase}}{}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a team to build a social media site for cocktail recipes, integrating the CocktailDB API.}
+            \resumeItem{Responsible for coding the implementation of the API}
+            \resumeItem{Designed and developed the social feed feature.}
+             \resumeItem{Implemented a favorites feature with options to share to the feed page.}
+              \resumeItem{Enhanced the site's user experience with CSS and Angular animations for smooth transitions.}
+               \resumeItem{Worked closely with the team to test, debug, and optimize the site.}
+            \resumeItem{Provided guidance and support to team members facing challenging elements of the project.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{ProjectBox} $|$ \emph{Angular, Bulma, Firebase}}{}
+          \resumeItemListStart
+            \resumeItem{Designed a project management system to plan ideas, features, and track bugs.}
+            \resumeItem{Utilized Google Login and Firebase authentication }
+            \resumeItem{Implemented Firebase Realtime Database models for projects, tasks, and todos}
+            \resumeItem{Crafted the site design to ensure a user-friendly interface.}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Ruby Kingdom} $|$ \emph{Ruby, Firebase}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a text-based adventure game with a command-line interface.}
+            \resumeItem{Designed and programmed an interactive battle and leveling system}
+            \resumeItem{Implemented a 2D array to craft a grid-based map that allows for player movement}
+            \resumeItem{Utilized the Pokémon API to randomly name game enemies}
+            \resumeItem{Incorporated Firebase authentication for planned features}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+   \resumeSubheading
+      {Codefi Code Labs}{Springfield, MO}
+      {Back End Development}{Jan. 2023 -- Jun. 2023}
+    \resumeSubheading
+      {Codefi Code Labs}{Springfield, MO}
+      {Front End Development}{Aug. 2022 -- Dec. 2022}
+    \resumeSubheading
+      {Ozark Technical Community College}{Springfield, MO}
+      {Completed  36 credits towards A.A.S. Computer Information Science}{Jan. 2012 -- May 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Associate Web Developer} {Jan. 2023 - Present}
+      {Codefi}{Apprenticeship}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development of a custom Learning Management System (LMS) }
+\resumeItem{Acquired proficiency in Jira, agile principles and methodologies, participated in stand-up meetings, and sprint planning, ensuring effective collaboration within the team.}
+\resumeItem{Gained practical experience in both front-end and back-end development, encompassing HTML, CSS, JavaScript, as well as API and database integration.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Content Writer and Consultant}{Dec. 2013 -- Dec. 2022}
+      {Freelance}{Remote}
+      \resumeItemListStart
+        \resumeItem{Worked with clients to develop content plans to suit their needs}
+        \resumeItem{Researched topics to explore options, understand target markets, and to support the writing process}
+        \resumeItem{Assisted clients in creating and implementing well-rounded web content strategies}
+         \resumeItem{Educated prospects on realistic goals, budget limitations, and steps needed to implement ideals.}
+            \resumeItem{Collaborated with other writers to deliver projects on a deadline}
+      \resumeItemListEnd
+
+         \resumeSubheading
+      {Google Search Rater}{Jan. 2013 -- May 2016}
+      {Lionbridge - NDA}{Contract}
+      \resumeItemListStart
+        \resumeItem{Evaluated and rated search engine results for Google to enhance the accuracy and relevance of search results.}
+        \resumeItem{Applied guidelines provided by Google to assess the quality of web pages and their relevance to user queries.}
+        \resumeItem{Analyzed search queries and search results to identify patterns and trends.}
+         \resumeItem{Maintained confidentiality and followed strict ethical standards in handling sensitive information.}
+            \resumeItem{Collaborated with other writers to deliver projects on a deadline}
+      \resumeItemListEnd
+
+
+
+
+
+%-----------VOLUNTEER-----------
+\section{Volunteer}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Youth Coding League }{Fall 2022}
+      {Technical Merit Judge}{}
+
+       \resumeSubheading
+      {Youth Coding League }{Spring 2023}
+      {Technical Merit Judge}{}
+    
+
+        \resumeSubheading
+      {Hack4Good}{2023}
+      {Communications Committee}{}
+     
+
+
+
+      
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    {HTML, CSS, JavaScript, TypeScript, Angular, Ruby, Rails 7, Node.js, Express.js, Vue.js, ASP.NET, Bootstrap, Bulma, Firebase, GitHub, BitBucket, Railway, Jira} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
